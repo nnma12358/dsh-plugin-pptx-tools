@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "PowerPoint authoring",
+    "description": "Inspect and build .pptx from a JSON spec, generate film-strip decks, and drive desktop PowerPoint over COM."
+  }
+}

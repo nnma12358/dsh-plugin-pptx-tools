@@ -1,0 +1,47 @@
+{
+  "name": "dsh-plugin-pptx-tools",
+  "version": "1.1.0",
+  "private": true,
+  "type": "module",
+  "description": "PowerPoint authoring for DSH: inspect/build .pptx from a JSON spec, generate film-strip decks, and drive desktop PowerPoint over COM.",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "files": [
+    "lib/index.js",
+    "cordis.patch.yml",
+    "icon.svg",
+    "locale",
+    "payload",
+    "examples",
+    "docs",
+    "README.md"
+  ],
+  "engines": {
+    "dsh": ">=0.1.1-0 <0.3.0"
+  },
+  "icon": "./icon.svg",
+  "author": "nnma12358 (https://github.com/nnma12358)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nnma12358/dsh-plugin-pptx-tools.git"
+  },
+  "homepage": "https://github.com/nnma12358/dsh-plugin-pptx-tools#readme",
+  "bugs": {
+    "url": "https://github.com/nnma12358/dsh-plugin-pptx-tools/issues"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness"
+  ]
+}

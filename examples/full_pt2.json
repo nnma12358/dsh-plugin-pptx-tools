@@ -1,0 +1,15 @@
+{
+  "slideWidth": 13.333, "slideHeight": 7.5,
+  "slides": [{
+    "title": "full2", "bg": {"type": "solid", "color": "EAF2FA"},
+    "shapes": [
+      {"kind": "rect", "x": 0.5, "y": 1.6, "w": 3, "h": 1, "fill": {"color": "C00000"}, "text": "红块", "size": 18, "color": "FFFFFF"},
+      {"kind": "table", "x": 4, "y": 5, "w": 8, "h": 1.6, "rows": [["名称", "数量"], ["苹果", "3"]]}
+    ],
+    "animations": [
+      {"target": 0, "effect": "appear", "trigger": "click"},
+      {"target": 1, "effect": "fly", "trigger": "afterPrev"}
+    ],
+    "transition": {"type": "fade"}
+  }]
+}

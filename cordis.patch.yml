@@ -1,0 +1,4 @@
+# dsh-plugin-pptx-tools profile registration.
+- insert:
+    - id: pptx-tools
+      name: 'dsh-plugin-pptx-tools'

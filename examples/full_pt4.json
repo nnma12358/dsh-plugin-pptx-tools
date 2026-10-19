@@ -1,0 +1,6 @@
+{
+  "slideWidth": 13.333, "slideHeight": 7.5,
+  "theme": {"fonts": {"major": "微软雅黑", "minor": "微软雅黑"}, "colors": {"accent1": "C00000"}},
+  "show": {"loop": false, "show": "all"},
+  "slides": [{"title": "t1"}, {"title": "t2", "bg": {"type": "gradient", "stops": [[0, "1F4E79"], [1, "3B8CC4"]], "angle": 90}}]
+}

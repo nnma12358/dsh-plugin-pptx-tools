@@ -1,0 +1,5 @@
+python-pptx==1.0.2
+Pillow>=10
+lxml>=5
+XlsxWriter>=3.2
+typing_extensions>=4.9

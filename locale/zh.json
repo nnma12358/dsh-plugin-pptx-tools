@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "PowerPoint 读写与生成",
+    "description": "按 JSON spec 读写 .pptx、生成电影胶卷幻灯片，并通过 COM 控制桌面版 PowerPoint。"
+  }
+}
