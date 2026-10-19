@@ -55,19 +55,11 @@ python3 -m pip install -r payload/requirements.txt
 - 默认字体 `微软雅黑` 只是名字字符串；目标机器没装该字体时，PPT 仍能生成，但显示效果会变。
 - `validate.py`（COM 端到端自检）随包提供但**未接入工具**，因为它依赖 `C:\Users\Public\Documents\DSH_Pptx\` 这个硬编码暂存目录。
 
-## 安装（dsh desktop）
+## 安装
 
-桌面端 profile 由 Electron 应用独占管理，`dsh plugin --profile desktop add …` 会被官方拒绝
-（`profile "desktop" is managed exclusively by the Electron application`）。请任选：
+桌面端 profile 由 Electron 应用独占管理（`dsh plugin --profile desktop …` 会被官方拒绝）。二选一：
+应用内「设置 → 插件 → 添加本地插件」；或把目录放进
+`%USERPROFILE%\.dsh\profiles\desktop\plugins\`，在该 profile 的 `package.json` 加 `link:` 依赖、
+包名加入 `dsh.profile.bundles`，再用自带 pnpm 装依赖。装完重启 dsh desktop。
 
-**A. 应用内安装（推荐）**：设置 → 插件 → 添加本地插件，选择本仓库目录。
-
-**B. 手工登记**：
-1. 把仓库放到 `%USERPROFILE%\.dsh\profiles\desktop\plugins\<包名>\`
-2. 在该 profile 的 `package.json` 里加 `link:` 依赖，并把包名加入 `dsh.profile.bundles`
-3. 用桌面版自带 pnpm 装依赖，然后重启 dsh desktop
-
-## 开发
-
-本仓库是纯源码包，无构建步骤：`main` / `exports` 直接指向 `lib/`，
-`dsh.bundle.patch` 指向 `cordis.patch.yml`。
+纯源码包，无构建步骤：`main` / `exports` 指向 `lib/`，`dsh.bundle.patch` 指向 `cordis.patch.yml`。
